@@ -58,7 +58,7 @@ export const Tech = () => {
   return (
     <section className="tech">
       <h2>TECH</h2>
-      <div class="tech__content">
+      <div className="tech__content">
         {techs.map((tech, i) => {
           const divider = i < techs.length - 1 ? ", " : "";
 

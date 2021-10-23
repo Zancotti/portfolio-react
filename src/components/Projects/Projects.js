@@ -79,7 +79,7 @@ export const Projects = () => {
   };
   return (
     <>
-      <section class="projects">
+      <section className="projects">
         <h2>FEATURED PROJECTS</h2>
 
         {projects.slice(0, projectsToShow()).map((project) => {
@@ -94,15 +94,15 @@ export const Projects = () => {
                 </div>
                 <h3>{project.header}</h3>
                 <p>{project.description}</p>
-                <div class="projects__link-container">
+                <div className="projects__link-container">
                   <a href={project.liveLink} target="_blank">
-                    <div class="projects__link">View it live</div>
+                    <div className="projects__link">View it live</div>
                   </a>
                   <a href={project.gitHubLink} target="_blank">
-                    <div class="projects__link">View GitHub</div>
+                    <div className="projects__link">View GitHub</div>
                   </a>
                 </div>
-                <div class="projects__languages">
+                <div className="projects__languages">
                   {project.languages.map((language) => {
                     return <span>{language}</span>;
                   })}
@@ -112,7 +112,7 @@ export const Projects = () => {
           );
         })}
       </section>
-      <section class="projects">
+      <section className="projects">
         <h4>OTHER PROJECTS</h4>
 
         {projects.slice(projectsToShow()).map((project) => {
@@ -121,15 +121,15 @@ export const Projects = () => {
               <article>
                 <h3>{project.header}</h3>
                 <p>{project.description}</p>
-                <div class="projects__link-container">
+                <div className="projects__link-container">
                   <a href={project.liveLink} target="_blank">
-                    <div class="projects__link">View it live</div>
+                    <div className="projects__link">View it live</div>
                   </a>
                   <a href={project.gitHubLink} target="_blank">
-                    <div class="projects__link">View GitHub</div>
+                    <div className="projects__link">View GitHub</div>
                   </a>
                 </div>
-                <div class="projects__languages">
+                <div className="projects__languages">
                   {project.languages.map((language) => {
                     return <span>{language}</span>;
                   })}

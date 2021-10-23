@@ -1,0 +1,32 @@
+.thoughts__image {
+  margin-bottom: 20px;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.thoughts__thought {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.thoughts__thought p {
+  line-height: 30px;
+  margin: 0;
+}
+
+.thoughts a {
+  color: black;
+  width: 100%;
+}
+
+.thoughts a:hover {
+  color: var(--main-color);
+  transition: all 200ms ease-in;
+}
+
+.thoughts__more-thoughts-thought {
+  margin-bottom: 20px;
+}

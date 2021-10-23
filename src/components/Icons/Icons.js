@@ -7,25 +7,27 @@ import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 export const Icons = () => {
   return (
-    <div class="header__icons round-icons">
+    <div className="header__icons round-icons">
       <a
         href="https://www.linkedin.com/in/sabrina-zancotti-1848256b/"
         target="_blank"
       >
         <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
-        <span class="sr-only">Link to Sabrina Zancotti's Linkedin</span>
+        <span className="sr-only">Link to Sabrina Zancotti's Linkedin</span>
       </a>
 
       <a href="https://github.com/zancotti" target="_blank">
         <FontAwesomeIcon icon={faGithub} className="icon" />
-        <span class="sr-only">Link to Sabrina Zancotti's GitHub</span>
+        <span className="sr-only">Link to Sabrina Zancotti's GitHub</span>
       </a>
       <a
         href="https://stackoverflow.com/users/16651035/sabrina-zancotti"
         target="_blank"
       >
         <FontAwesomeIcon icon={faStackOverflow} className="icon" />
-        <span class="sr-only">Link to Sabrina Zancotti's Stack Overflow</span>
+        <span className="sr-only">
+          Link to Sabrina Zancotti's Stack Overflow
+        </span>
       </a>
     </div>
   );
