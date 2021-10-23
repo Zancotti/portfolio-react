@@ -2,7 +2,7 @@ import React from "react";
 import "./Thoughts.css";
 import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronsRight } from "@fortawesome/pro-duotone-svg-icons";
 
 export const Thoughts = () => {
   const thoughts = [
@@ -84,8 +84,7 @@ export const Thoughts = () => {
               <div className="thoughts__more-thoughts-thought">
                 <span>{thought.date}</span>. {thought.name}{" "}
                 <i>
-                  <FontAwesomeIcon icon={faChevronRight} />
-                  <FontAwesomeIcon icon={faChevronRight} />
+                  <FontAwesomeIcon icon={faChevronsRight} />
                 </i>
               </div>
             </a>

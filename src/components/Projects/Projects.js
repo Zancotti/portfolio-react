@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronsRight } from "@fortawesome/pro-duotone-svg-icons";
 
 export const Projects = () => {
   const projects = [
@@ -126,8 +126,7 @@ export const Projects = () => {
                 <p>
                   {project.description}{" "}
                   <i>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                    <FontAwesomeIcon icon={faChevronRight} />
+                    <FontAwesomeIcon icon={faChevronsRight} />
                   </i>
                 </p>
                 <div className="projects__link-container">
