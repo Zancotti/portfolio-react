@@ -1,0 +1,55 @@
+.skills {
+  font-family: "Roboto", sans-serif;
+}
+
+.skills h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.skills__content__header {
+  color: var(--main-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.show-more {
+  display: none;
+}
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .tech__content {
+    font-size: 20px;
+  }
+
+  .show-more {
+    display: block;
+  }
+
+  .skills__content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1080px) {
+  .skills__content {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 25px;
+  }
+
+  .skills__content__header {
+    font-size: 25px;
+  }
+
+  .show-more {
+    display: block;
+  }
+}

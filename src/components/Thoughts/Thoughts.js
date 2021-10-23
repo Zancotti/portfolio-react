@@ -1,6 +1,8 @@
 import React from "react";
 import "./Thoughts.css";
 import { useMediaQuery } from "react-responsive";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Thoughts = () => {
   const thoughts = [
@@ -54,32 +56,37 @@ export const Thoughts = () => {
     <section className="thoughts">
       <h2>MY THOUGHTS</h2>
 
-      {thoughts.slice(0, thoughtsToShow()).map((thought) => {
-        return (
-          <>
-            <a href={thought.url}>
-              <div className="thoughts__thought">
-                <img
-                  src={thought.img}
-                  alt={thought.alt}
-                  className="thoughts__image image-1"
-                ></img>
-                <h5>{thought.date}</h5>
-                <h6>{thought.name}</h6>
-                <p>{thought.description}</p>
-              </div>
-            </a>
-          </>
-        );
-      })}
-
+      <div className="thoughts-wrapper">
+        {thoughts.slice(0, thoughtsToShow()).map((thought) => {
+          return (
+            <>
+              <a href={thought.url}>
+                <div className="thoughts__thought">
+                  <img
+                    src={thought.img}
+                    alt={thought.alt}
+                    className="thoughts__image image-1"
+                  ></img>
+                  <h5>{thought.date}</h5>
+                  <h6>{thought.name}</h6>
+                  <p>{thought.description}</p>
+                </div>
+              </a>
+            </>
+          );
+        })}
+      </div>
       <h4>More Thoughts</h4>
       {thoughts.slice(thoughtsToShow()).map((thought) => {
         return (
           <>
             <a href={thought.url}>
               <div className="thoughts__more-thoughts-thought">
-                <span>{thought.date}</span>. {thought.name}
+                <span>{thought.date}</span>. {thought.name}{" "}
+                <i>
+                  <FontAwesomeIcon icon={faChevronRight} />
+                  <FontAwesomeIcon icon={faChevronRight} />
+                </i>
               </div>
             </a>
           </>

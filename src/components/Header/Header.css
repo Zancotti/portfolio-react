@@ -55,3 +55,62 @@
   border: 2px solid var(--white);
   border-radius: 50%;
 }
+
+/* ---------------------------Ipad adaptions -------------------*/
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .header {
+    padding: 49px 50px 29px 50px;
+  }
+
+  .header__text-cont {
+    height: 250px;
+    top: 121px;
+    left: 50px;
+  }
+
+  .header__text-cont__portfolio-name {
+    font-size: 18px;
+  }
+
+  .header__text-cont__prof1 {
+    font-size: 40px;
+  }
+
+  .header__text-cont__prof1__plus-prof2 {
+    font-size: 32px;
+  }
+
+  /*-------------Header profile-img --------------*/
+
+  .header__profile-pic {
+    left: 60%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .header {
+    padding: 49px 20% 29px 20%;
+  }
+
+  .header__text-cont {
+    left: 100px;
+    max-width: 70%;
+  }
+
+  .header__text-cont__portfolio-name {
+    font-size: 22px;
+    line-height: 60px;
+  }
+
+  .header__text-cont__prof1__plus-prof2 {
+    font-size: 40px;
+    line-height: 80px;
+  }
+
+  /*-------------Header profile-img --------------*/
+
+  .header__profile-pic {
+    left: 60%;
+  }
+}

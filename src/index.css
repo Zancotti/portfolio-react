@@ -123,3 +123,78 @@ h3 a:hover {
   white-space: nowrap;
   width: 1px;
 }
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  h1 {
+    font-size: 62px;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 25px 50px 50px 50px;
+  }
+}
+
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--main-color);
+    margin: 20px 0px;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: var(--main-color);
+    font-size: 22px;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20% 50px 20%;
+    align-items: center;
+  }
+
+  article p {
+    font-size: 18px;
+  }
+}

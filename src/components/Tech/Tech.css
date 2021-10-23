@@ -10,3 +10,9 @@
 .tech__content span {
   color: var(--main-color);
 }
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .tech__content {
+    font-size: 28px;
+  }
+}

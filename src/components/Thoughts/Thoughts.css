@@ -3,6 +3,7 @@
   background-size: cover;
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 
 .thoughts__thought {
@@ -29,4 +30,46 @@
 
 .thoughts__more-thoughts-thought {
   margin-bottom: 20px;
+}
+
+.thoughts-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .thoughts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .thoughts__more-thougts-thought {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .thoughts__more-thougts-thought span {
+    color: var(--main-color);
+  }
+
+  .thoughts__thought p {
+    font-size: 18px;
+  }
+
+  .thoughts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+  }
+
+  .thoughts__more-thoughts-thought {
+    font-size: 18px;
+  }
 }

@@ -12,19 +12,25 @@ export const Icons = () => {
         href="https://www.linkedin.com/in/sabrina-zancotti-1848256b/"
         target="_blank"
       >
-        <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
+        <i>
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </i>
         <span className="sr-only">Link to Sabrina Zancotti's Linkedin</span>
       </a>
 
       <a href="https://github.com/zancotti" target="_blank">
-        <FontAwesomeIcon icon={faGithub} className="icon" />
+        <i>
+          <FontAwesomeIcon icon={faGithub} />
+        </i>
         <span className="sr-only">Link to Sabrina Zancotti's GitHub</span>
       </a>
       <a
         href="https://stackoverflow.com/users/16651035/sabrina-zancotti"
         target="_blank"
       >
-        <FontAwesomeIcon icon={faStackOverflow} className="icon" />
+        <i>
+          <FontAwesomeIcon icon={faStackOverflow} />
+        </i>
         <span className="sr-only">
           Link to Sabrina Zancotti's Stack Overflow
         </span>

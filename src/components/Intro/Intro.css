@@ -24,3 +24,30 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .intro__text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .intro__text {
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  .intro__text__line {
+    position: relative;
+    border: 3px solid var(--main-color);
+    width: 70px;
+    bottom: 0px;
+  }
+
+  .intro__text__dot {
+    left: -10px;
+    bottom: -1px;
+    height: 16px;
+    width: 16px;
+  }
+}

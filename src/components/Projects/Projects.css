@@ -85,3 +85,31 @@
 .view-it-live:hover {
   transition: all ease-in 200ms;
 }
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .projects__languages span {
+    font-size: 14px;
+  }
+
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+  }
+}

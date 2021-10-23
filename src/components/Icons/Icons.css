@@ -8,7 +8,7 @@
   top: 48px;
 }
 
-.icon {
+.header__icons i {
   color: var(--white);
   padding: 6px;
   width: 40px !important;
@@ -18,9 +18,35 @@
   font-size: 36px;
 }
 
-.icon:hover {
+.header__icons i:hover {
   color: var(--white);
   background-color: var(--main-color);
   border: 1px solid var(--white);
   transition: all 200ms ease-in;
+}
+
+.round-icons i {
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
+}
+
+@media (min-width: 668px) and (max-width: 1079px) {
+  .header__icons {
+    left: 65%;
+    width: 160px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .header__icons {
+    left: 65%;
+    width: 200px;
+  }
+
+  .round-icons i {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+  }
 }
