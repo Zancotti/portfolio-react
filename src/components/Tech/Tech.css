@@ -1,0 +1,12 @@
+.tech {
+  font-size: 18px;
+}
+
+.tech__content {
+  text-align: center;
+  font-weight: 400;
+}
+
+.tech__content span {
+  color: var(--main-color);
+}

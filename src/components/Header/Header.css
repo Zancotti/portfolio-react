@@ -1,0 +1,57 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/pictures/DSC_3213.JPG");
+  background-size: cover;
+  height: 520px;
+  color: var(--white);
+  padding: 39px 24px 29px 24px;
+  background-position: center center;
+}
+
+.header__text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 202px;
+  margin-top: 60px;
+  max-width: 50%;
+}
+
+.header__text-cont__portfolio-name {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.header__text-cont__portfolio-name__port {
+  font-weight: 400;
+}
+
+.header__text-cont__portfolio-name__name {
+  font-weight: 700;
+}
+
+.header__text-cont__prof1__plus-prof2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/*-------------Header profile-img --------------*/
+
+.header__profile-pic {
+  position: absolute;
+  left: 45%;
+  top: 356px;
+  z-index: 1;
+}
+
+.header__profile-pic img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
