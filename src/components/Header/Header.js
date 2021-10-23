@@ -4,7 +4,7 @@ import { Icons } from "../Icons/Icons";
 
 export const Header = () => {
   return (
-    <div className="header">
+    <header>
       <Icons />
       <div className="header__text-cont">
         <div className="header__text-cont__portfolio-name">
@@ -23,9 +23,9 @@ export const Header = () => {
       <div className="header__profile-pic">
         <img
           src="/pictures/header__profile-picture.jpg"
-          alt="Profile picture of Sabrina Zancotti"
+          alt="Sabrina Zancotti"
         />
       </div>
-    </div>
+    </header>
   );
 };

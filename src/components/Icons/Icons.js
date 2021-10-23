@@ -11,6 +11,7 @@ export const Icons = () => {
       <a
         href="https://www.linkedin.com/in/sabrina-zancotti-1848256b/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <i>
           <FontAwesomeIcon icon={faLinkedinIn} />
@@ -18,7 +19,11 @@ export const Icons = () => {
         <span className="sr-only">Link to Sabrina Zancotti's Linkedin</span>
       </a>
 
-      <a href="https://github.com/zancotti" target="_blank">
+      <a
+        href="https://github.com/zancotti"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <i>
           <FontAwesomeIcon icon={faGithub} />
         </i>
@@ -27,6 +32,7 @@ export const Icons = () => {
       <a
         href="https://stackoverflow.com/users/16651035/sabrina-zancotti"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <i>
           <FontAwesomeIcon icon={faStackOverflow} />

@@ -7,6 +7,7 @@ import { faChevronsRight } from "@fortawesome/pro-duotone-svg-icons";
 export const Thoughts = () => {
   const thoughts = [
     {
+      id: 1,
       url: "#",
       img: "./pictures/flight.jpg",
       date: "OKT 2021",
@@ -16,6 +17,7 @@ export const Thoughts = () => {
       alt: "A plane taking off",
     },
     {
+      id: 2,
       url: "#",
       img: "./pictures/flight.jpg",
       date: "OKT 2021",
@@ -25,6 +27,7 @@ export const Thoughts = () => {
       alt: "A plane taking off",
     },
     {
+      id: 3,
       url: "#",
       img: "./pictures/flight.jpg",
       date: "OKT 2021",
@@ -34,6 +37,7 @@ export const Thoughts = () => {
       alt: "A plane taking off",
     },
     {
+      id: 4,
       url: "#",
       img: "./pictures/flight.jpg",
       date: "OKT 2021",
@@ -59,36 +63,32 @@ export const Thoughts = () => {
       <div className="thoughts-wrapper">
         {thoughts.slice(0, thoughtsToShow()).map((thought) => {
           return (
-            <>
-              <a href={thought.url}>
-                <div className="thoughts__thought">
-                  <img
-                    src={thought.img}
-                    alt={thought.alt}
-                    className="thoughts__image image-1"
-                  ></img>
-                  <h5>{thought.date}</h5>
-                  <h6>{thought.name}</h6>
-                  <p>{thought.description}</p>
-                </div>
-              </a>
-            </>
+            <a key={thought.id} href={thought.url}>
+              <div className="thoughts__thought">
+                <img
+                  src={thought.img}
+                  alt={thought.alt}
+                  className="thoughts__image image-1"
+                ></img>
+                <h5>{thought.date}</h5>
+                <h6>{thought.name}</h6>
+                <p>{thought.description}</p>
+              </div>
+            </a>
           );
         })}
       </div>
       <h4>More Thoughts</h4>
       {thoughts.slice(thoughtsToShow()).map((thought) => {
         return (
-          <>
-            <a href={thought.url}>
-              <div className="thoughts__more-thoughts-thought">
-                <span>{thought.date}</span>. {thought.name}{" "}
-                <i>
-                  <FontAwesomeIcon icon={faChevronsRight} />
-                </i>
-              </div>
-            </a>
-          </>
+          <a key={thought.id} href={thought.url}>
+            <div className="thoughts__more-thoughts-thought">
+              <span>{thought.date}</span>. {thought.name}{" "}
+              <i>
+                <FontAwesomeIcon icon={faChevronsRight} />
+              </i>
+            </div>
+          </a>
         );
       })}
     </section>

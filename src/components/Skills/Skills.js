@@ -17,32 +17,32 @@ export const Skills = () => {
   return (
     <section className="skills">
       <h2>SKILLS</h2>
-      <div class="skills__content">
+      <div className="skills__content">
         <div>
-          <p class="skills__content__header">Code</p>
+          <p className="skills__content__header">Code</p>
           {codes.map((code) => {
-            return <p>{code}</p>;
+            return <p key={code}>{code}</p>;
           })}
         </div>
 
         <div>
-          <p class="skills__content__header">Toolbox</p>
+          <p className="skills__content__header">Toolbox</p>
           {toolbox.map((tool) => {
-            return <p>{tool}</p>;
+            return <p key={tool}>{tool}</p>;
           })}
         </div>
 
-        <div class="show-more">
-          <p class="skills__content__header">more</p>
+        <div className="show-more">
+          <p className="skills__content__header">more</p>
           {more.map((quality) => {
-            return <p>{quality}</p>;
+            return <p key={quality}>{quality}</p>;
           })}
         </div>
 
         <div>
-          <p class="skills__content__header">UPCOMING</p>
+          <p className="skills__content__header">UPCOMING</p>
           {upcoming.map((skill) => {
-            return <p>{skill}</p>;
+            return <p key={skill}>{skill}</p>;
           })}
         </div>
       </div>

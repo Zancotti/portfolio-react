@@ -35,10 +35,6 @@ export const Tech = () => {
       bold: false,
     },
     {
-      name: "Grid",
-      bold: false,
-    },
-    {
       name: "pair-programming",
       bold: false,
     },
@@ -63,7 +59,10 @@ export const Tech = () => {
           const divider = i < techs.length - 1 ? ", " : "";
 
           return (
-            <span style={{ fontWeight: tech.bold ? "600" : "400" }}>
+            <span
+              key={tech.name}
+              style={{ fontWeight: tech.bold ? "600" : "400" }}
+            >
               {tech.name}
               {divider}
             </span>

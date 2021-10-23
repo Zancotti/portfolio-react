@@ -86,31 +86,37 @@ export const Projects = () => {
         <div className="projects-wrapper">
           {projects.slice(0, projectsToShow()).map((project) => {
             return (
-              <>
-                <article>
-                  <div className="projects__picture">
-                    <div className="projects__picture-overlay">
-                      <span>{project.name}</span>
-                    </div>
-                    <img src={project.img} alt={project.alt} />
+              <article key={project.name}>
+                <div className="projects__picture">
+                  <div className="projects__picture-overlay">
+                    <span>{project.name}</span>
                   </div>
-                  <h3>{project.header}</h3>
-                  <p>{project.description}</p>
-                  <div className="projects__link-container">
-                    <a href={project.liveLink} target="_blank">
-                      <div className="projects__link">View it live</div>
-                    </a>
-                    <a href={project.gitHubLink} target="_blank">
-                      <div className="projects__link">View GitHub</div>
-                    </a>
-                  </div>
-                  <div className="projects__languages">
-                    {project.languages.map((language) => {
-                      return <span>{language}</span>;
-                    })}
-                  </div>
-                </article>
-              </>
+                  <img src={project.img} alt={project.alt} />
+                </div>
+                <h3>{project.header}</h3>
+                <p>{project.description}</p>
+                <div className="projects__link-container">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="projects__link">View it live</div>
+                  </a>
+                  <a
+                    href={project.gitHubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="projects__link">View GitHub</div>
+                  </a>
+                </div>
+                <div className="projects__languages">
+                  {project.languages.map((language) => {
+                    return <span key={language}>{language}</span>;
+                  })}
+                </div>
+              </article>
             );
           })}
         </div>
@@ -120,30 +126,36 @@ export const Projects = () => {
 
         {projects.slice(projectsToShow()).map((project) => {
           return (
-            <>
-              <article>
-                <h3>{project.header}</h3>
-                <p>
-                  {project.description}{" "}
-                  <i>
-                    <FontAwesomeIcon icon={faChevronsRight} />
-                  </i>
-                </p>
-                <div className="projects__link-container">
-                  <a href={project.liveLink} target="_blank">
-                    <div className="projects__link">View it live</div>
-                  </a>
-                  <a href={project.gitHubLink} target="_blank">
-                    <div className="projects__link">View GitHub</div>
-                  </a>
-                </div>
-                <div className="projects__languages">
-                  {project.languages.map((language) => {
-                    return <span>{language}</span>;
-                  })}
-                </div>
-              </article>
-            </>
+            <article key={project.name}>
+              <h3>{project.header}</h3>
+              <p>
+                {project.description}{" "}
+                <i>
+                  <FontAwesomeIcon icon={faChevronsRight} />
+                </i>
+              </p>
+              <div className="projects__link-container">
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="projects__link">View it live</div>
+                </a>
+                <a
+                  href={project.gitHubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="projects__link">View GitHub</div>
+                </a>
+              </div>
+              <div className="projects__languages">
+                {project.languages.map((language) => {
+                  return <span key={language}>{language}</span>;
+                })}
+              </div>
+            </article>
           );
         })}
       </section>

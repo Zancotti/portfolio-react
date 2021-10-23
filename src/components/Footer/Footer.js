@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <h2>CONTACT</h2>
       <p>Sabrina Zancotti</p>
       <p>

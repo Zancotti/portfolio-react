@@ -1,4 +1,4 @@
-.header {
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/pictures/DSC_3213.JPG");
   background-size: cover;
@@ -59,7 +59,7 @@
 /* ---------------------------Ipad adaptions -------------------*/
 
 @media (min-width: 668px) and (max-width: 1079px) {
-  .header {
+  header {
     padding: 49px 50px 29px 50px;
   }
 
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 1080px) {
-  .header {
+  header {
     padding: 49px 20% 29px 20%;
   }
 
