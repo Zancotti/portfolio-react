@@ -40,7 +40,7 @@ export const Projects = () => {
       img: "./pictures/movie.jpeg",
       header: "Project movie",
       description:
-        "Website developed with React using React Router and styled components and information from an API",
+        "Website developed with React using React Router and styled components and information from an API.",
       liveLink: "https://mejstedtzancottimovieapp.netlify.app/",
       gitHubLink: "https://github.com/Zancotti/project-movies",
       languages: ["HTML5", "Styled components", "JavaScript ES6", "React"],
