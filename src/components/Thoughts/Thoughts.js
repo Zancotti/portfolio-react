@@ -59,7 +59,7 @@ export const Thoughts = () => {
   return (
     <section className="thoughts">
       <h2>MY THOUGHTS</h2>
-      <p>Upcoming</p>
+      <p>Upcoming</p>g
 
       <div className="thoughts-wrapper">
         {thoughts.slice(0, thoughtsToShow()).map((thought) => {
