@@ -2,7 +2,13 @@ import React from "react";
 import "./Skills.css";
 
 export const Skills = () => {
-  const codes = ["HTML5", "CSS3", "JavaScript ES6", "React"];
+  const codes = [
+    "HTML5",
+    "CSS3",
+    "JavaScript ES6",
+    "React",
+    "Styled Components",
+  ];
   const toolbox = ["Visual Studio Code", "GitHub", "Figma", "Slack"];
   const more = [
     "CEO experience",
@@ -12,7 +18,7 @@ export const Skills = () => {
     "Marketing",
     "Business Strategy",
   ];
-  const upcoming = ["Redux", "Node", "Styled Components"];
+  const upcoming = ["Redux", "Node"];
 
   return (
     <section className="skills">

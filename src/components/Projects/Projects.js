@@ -36,6 +36,18 @@ export const Projects = () => {
     },
 
     {
+      name: "Project movie",
+      img: "./pictures/movie.jpeg",
+      header: "Project movie",
+      description:
+        "Website developed with React using React Router and styled components and information from an API",
+      liveLink: "https://mejstedtzancottimovieapp.netlify.app/",
+      gitHubLink: "https://github.com/Zancotti/project-movies",
+      languages: ["HTML5", "Styled components", "JavaScript ES6", "React"],
+      alt: "Movie theatre",
+    },
+
+    {
       name: "Business Site",
       img: "./pictures/escape__house.JPG",
       header: "Responsive Business site",
