@@ -7,6 +7,7 @@ export const Skills = () => {
     "CSS3",
     "JavaScript ES6",
     "React",
+    "Redux",
     "Styled Components",
   ];
   const toolbox = ["Visual Studio Code", "GitHub", "Figma", "Slack"];
@@ -18,7 +19,7 @@ export const Skills = () => {
     "Marketing",
     "Business Strategy",
   ];
-  const upcoming = ["Redux", "Node"];
+  const upcoming = ["Node"];
 
   return (
     <section className="skills">

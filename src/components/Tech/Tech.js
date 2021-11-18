@@ -50,6 +50,14 @@ export const Tech = () => {
       name: "React",
       bold: true,
     },
+    {
+      name: "Redux",
+      bold: true,
+    },
+    {
+      name: "styled-components",
+      bold: false,
+    },
   ];
   return (
     <section className="tech">

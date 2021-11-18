@@ -7,6 +7,24 @@ import { faChevronsRight } from "@fortawesome/pro-duotone-svg-icons";
 export const Projects = () => {
   const projects = [
     {
+      name: "Todo App",
+      img: "./pictures/todoApp.png",
+      header: "React Redux Todo App",
+      description:
+        "Todo app developed with React Redux and using styled-components.",
+      liveLink: "https://zancotti-todoapp.netlify.app/",
+      gitHubLink: "https://github.com/Zancotti/project-todos",
+      languages: [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "React",
+        "Redux",
+        "styled-components",
+      ],
+      alt: "Screenshot of the application",
+    },
+    {
       name: "Booking form",
       img: "./pictures/flight.jpg",
       header: "React booking form",
