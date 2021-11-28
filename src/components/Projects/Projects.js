@@ -25,6 +25,26 @@ export const Projects = () => {
       alt: "Screenshot of the application",
     },
     {
+      name: "The Labyrinth",
+      img: "./pictures/labyrinth.jpg",
+      header: "React Redux labyrinth game",
+      description:
+        "Labyrinth game developed with React Redux and using styled-components.",
+      liveLink: "https://zancotti-santos-the-labyrinth.netlify.app/",
+      gitHubLink: "https://github.com/Zancotti/project-labyrinth",
+      languages: [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "React",
+        "Redux",
+        "styled-components",
+        "API",
+      ],
+      alt: "Screenshot of the application",
+    },
+
+    {
       name: "Booking form",
       img: "./pictures/flight.jpg",
       header: "React booking form",
