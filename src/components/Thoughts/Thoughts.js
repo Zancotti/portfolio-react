@@ -11,21 +11,21 @@ export const Thoughts = () => {
       url: "https://www.linkedin.com/posts/sabrinazancotti_onmouseenter-and-onmouseleavea-simple-activity-6872124061334482944-rLPv",
       img: "./pictures/simplehover.gif",
       date: "DEC 2021",
-      name: "onMouseEnter and onMouseLeave — A simple way to hover in React",
+      name: "A simple way to hover in React",
       description:
-        "An article describing how to use states to create hover effects in React",
+        "An article describing how to use states to create hover effects in React.",
       alt: "A react hover effect",
     },
-    // {
-    //   id: 2,
-    //   url: "#",
-    //   img: "./pictures/flight.jpg",
-    //   date: "OKT 2021",
-    //   name: "How to stop being scared: Learning to love code",
-    //   description:
-    //     "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
-    //   alt: "A plane taking off",
-    // },
+    {
+      id: 2,
+      url: "https://www.linkedin.com/posts/sabrinazancotti_ive-spent-5-years-studying-law-and-6-more-activity-6862378770913914880-aHmL",
+      img: "./pictures/plant.jpg",
+      date: "NOV 2021",
+      name: "Embracing change",
+      description:
+        "This year I took the biggest decision yet in my career - changing from law to software development.",
+      alt: "A growing plant",
+    },
     // {
     //   id: 3,
     //   url: "#",
