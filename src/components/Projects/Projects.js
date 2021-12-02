@@ -1,8 +1,6 @@
 import React from "react";
 import "./Projects.css";
 import { useMediaQuery } from "react-responsive";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronsRight } from "@fortawesome/pro-duotone-svg-icons";
 
 export const Projects = () => {
   const projects = [
@@ -178,12 +176,7 @@ export const Projects = () => {
           return (
             <article key={project.name}>
               <h3>{project.header}</h3>
-              <p>
-                {project.description}{" "}
-                <i>
-                  <FontAwesomeIcon icon={faChevronsRight} />
-                </i>
-              </p>
+              <p>{project.description} </p>
               <div className="projects__link-container">
                 <a
                   href={project.liveLink}

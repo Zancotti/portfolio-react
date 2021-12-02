@@ -6,16 +6,16 @@ import { faChevronsRight } from "@fortawesome/pro-duotone-svg-icons";
 
 export const Thoughts = () => {
   const thoughts = [
-    // {
-    //   id: 1,
-    //   url: "#",
-    //   img: "./pictures/flight.jpg",
-    //   date: "OKT 2021",
-    //   name: "How to stop being scared: Learning to love code",
-    //   description:
-    //     "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
-    //   alt: "A plane taking off",
-    // },
+    {
+      id: 1,
+      url: "https://www.linkedin.com/posts/sabrinazancotti_onmouseenter-and-onmouseleavea-simple-activity-6872124061334482944-rLPv",
+      img: "./pictures/simplehover.gif",
+      date: "DEC 2021",
+      name: "onMouseEnter and onMouseLeave — A simple way to hover in React",
+      description:
+        "An article describing how to use states to create hover effects in React",
+      alt: "A react hover effect",
+    },
     // {
     //   id: 2,
     //   url: "#",
@@ -58,8 +58,7 @@ export const Thoughts = () => {
   };
   return (
     <section className="thoughts">
-      <h2>MY THOUGHTS</h2>
-      <p>Upcoming</p>
+      <h2>Knowledge Sharing</h2>
 
       <div className="thoughts-wrapper">
         {thoughts.slice(0, thoughtsToShow()).map((thought) => {
