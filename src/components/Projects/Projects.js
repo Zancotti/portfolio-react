@@ -23,6 +23,25 @@ export const Projects = () => {
       alt: "Screenshot of the application",
     },
     {
+      name: "Oscars API",
+      img: "./pictures/oscars.jpg",
+      header: "React frontend & Node backend",
+      description:
+        "A node backend API for the Oscars and an example frontend for it.",
+      liveLink: "https://zancotti-oscars.netlify.app/",
+      gitHubLink: "https://github.com/Zancotti/project-express-api",
+      languages: [
+        "Node",
+        "API",
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "React",
+        "styled-components",
+      ],
+      alt: "An Oscars statuette covered with smoke",
+    },
+    {
       name: "The Labyrinth",
       img: "./pictures/labyrinth.jpg",
       header: "React Redux labyrinth game",
@@ -41,7 +60,6 @@ export const Projects = () => {
       ],
       alt: "Screenshot of the application",
     },
-
     {
       name: "Booking form",
       img: "./pictures/flight.jpg",
@@ -52,7 +70,6 @@ export const Projects = () => {
       languages: ["HTML5", "CSS3", "JavaScript ES6", "React"],
       alt: "A plane taking off",
     },
-
     {
       name: "Music releases",
       img: "./pictures/concert.jpg",

@@ -8,6 +8,7 @@ export const Skills = () => {
     "JavaScript ES6",
     "React",
     "Redux",
+    "Node",
     "Styled Components",
   ];
   const toolbox = ["Visual Studio Code", "GitHub", "Figma", "Slack"];
@@ -19,7 +20,6 @@ export const Skills = () => {
     "Marketing",
     "Business Strategy",
   ];
-  const upcoming = ["Node"];
 
   return (
     <section className="skills">
@@ -43,13 +43,6 @@ export const Skills = () => {
           <p className="skills__content__header">more</p>
           {more.map((quality) => {
             return <p key={quality}>{quality}</p>;
-          })}
-        </div>
-
-        <div>
-          <p className="skills__content__header">UPCOMING</p>
-          {upcoming.map((skill) => {
-            return <p key={skill}>{skill}</p>;
           })}
         </div>
       </div>

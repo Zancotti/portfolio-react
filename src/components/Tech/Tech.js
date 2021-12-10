@@ -55,6 +55,11 @@ export const Tech = () => {
       bold: true,
     },
     {
+      name: "Node",
+      bold: true,
+    },
+
+    {
       name: "styled-components",
       bold: false,
     },
