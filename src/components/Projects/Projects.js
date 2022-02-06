@@ -5,6 +5,27 @@ import { useMediaQuery } from "react-responsive";
 export const Projects = () => {
   const projects = [
     {
+      name: "Murder Mystery",
+      img: "./pictures/police.jpg",
+      header: "Fullstack app with React",
+      description:
+        "A game developed with React Redux, backend in Node.js and MongoDB",
+      liveLink: "https://murdermystery.netlify.app/",
+      gitHubLink: "https://github.com/Zancotti/murdermystery",
+      languages: [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "React",
+        "Redux",
+        "Node",
+        "MongoDB",
+        "Moongose",
+        "styled-components",
+      ],
+      alt: "Screenshot of the application",
+    },
+    {
       name: "Todo App",
       img: "./pictures/todoApp.png",
       header: "React Redux Todo App",
