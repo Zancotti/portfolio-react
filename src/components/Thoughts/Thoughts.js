@@ -8,6 +8,16 @@ export const Thoughts = () => {
   const thoughts = [
     {
       id: 1,
+      url: "https://www.linkedin.com/feed/update/urn:li:activity:6888445269508206592/",
+      img: "./pictures/article.jpeg",
+      date: "JAN 2022",
+      name: "Preparing for your first code test",
+      description:
+        "An article about what you can do to prepare for that first scary technical code test.",
+      alt: "Two women discussing code",
+    },
+    {
+      id: 2,
       url: "https://www.linkedin.com/posts/sabrinazancotti_onmouseenter-and-onmouseleavea-simple-activity-6872124061334482944-rLPv",
       img: "./pictures/simplehover.gif",
       date: "DEC 2021",
@@ -17,7 +27,7 @@ export const Thoughts = () => {
       alt: "A react hover effect",
     },
     {
-      id: 2,
+      id: 3,
       url: "https://www.linkedin.com/posts/sabrinazancotti_ive-spent-5-years-studying-law-and-6-more-activity-6862378770913914880-aHmL",
       img: "./pictures/plant.jpg",
       date: "NOV 2021",
